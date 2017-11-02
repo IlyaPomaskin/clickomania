@@ -74,11 +74,11 @@ class App extends React.Component {
         fieldHistory: R.append(field, this.state.fieldHistory)
     });
 
-    handleGameOver = blocksCount => this.setState({
+    handleGameOver = field => this.setState({
         gameOver: true,
         modal: MODAL_GAME_OVER,
         modalProps: {
-            blocksCount,
+            score: h.getScore(R.head(this.state.fieldHistory), field),
             onConfirm: username => this.setState({ modal: null }) 
         }
     });

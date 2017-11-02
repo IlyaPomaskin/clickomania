@@ -11,7 +11,7 @@ class Game extends React.PureComponent {
         }
 
         if (!h.hasMovements(nextField)) {
-            this.props.onGameOver(h.getBlocksCount(nextField));
+            this.props.onGameOver(nextField);
         }
 
         this.props.onMove(nextField);

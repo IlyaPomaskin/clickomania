@@ -28,7 +28,7 @@ class GameOver extends React.Component {
                 </Card.Header>
                 
                 <Card.Body>
-                    <p>Your score: {this.props.blocksCount}</p>
+                    <p>Your score: {this.props.score}</p>
 
                     {false && <label className='c-label'>
                         Enter your name:
