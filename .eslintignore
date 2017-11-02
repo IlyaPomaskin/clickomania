@@ -1,0 +1,14 @@
+flow-typed/**
+node_modules/**
+assets/**
+build/**
+.tmp/**
+mocks/**
+docs/**
+**/trackers/**
+**/libs/**
+**/compiled/**
+*.json
+*.md
+*.less
+*.svg

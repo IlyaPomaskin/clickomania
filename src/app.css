@@ -1,0 +1,40 @@
+.container {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.toolbar {
+    display: flex;
+    justify-content: center;
+    flex-shrink: 1;
+}
+
+.toolbar > * {
+    margin: 5px;
+}
+
+.game {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    align-items: center;
+}
+
+.col {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.cell {
+    width: 5vh;
+    height: 5vh;
+}
+
+.cell--color-cyan { background-color: #36d5d6; }
+.cell--color-red { background-color: #cf2f30; }
+.cell--color-orange { background-color: #ff9800; }
+.cell--color-violet { background-color: #8d4e8d; }
+.cell--color-green { background-color: #324d33; }
+.cell--empty { opacity: 0.3; }
