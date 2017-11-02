@@ -6,13 +6,15 @@ class Game extends React.PureComponent {
     handleCellClick = cell => {
         const nextField = h.removeCell(this.props.field, cell);
 
+        if (this.props.field === nextField) {
+            return;
+        }
+
         if (!h.hasMovements(nextField)) {
             this.props.onGameOver(h.getBlocksCount(nextField));
         }
 
-        if (this.props.field !== nextField) {
-            this.props.onMove(nextField);
-        }
+        this.props.onMove(nextField);
     };
 
     render() {
