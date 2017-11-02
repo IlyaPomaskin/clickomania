@@ -54,4 +54,4 @@ export const hasMovements = field => !!field.find(
     )
 );
 
-export const getBlocksCount = field => R.flatten(field).length;
+export const getBlocksCount = field => R.flatten(field).filter(color => !!color).length;
