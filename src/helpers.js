@@ -45,7 +45,7 @@ export const removeCell = (field, cell) => {
 
             return col;
         })
-        .filter(col => col.length > 0);
+        .filter(col => col.find(color => !!color));
 };
 
 export const hasMovements = field => !!field.find(
